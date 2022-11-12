@@ -1,3 +1,4 @@
+# If always getting error messages such like *****pageckage missing, go to "file=>Settings=>Python Interpreter   Click + to install the missing lib"
 import pymysql
 import pandas as pd
 import numpy as np
