@@ -1,5 +1,5 @@
 # Running Mysql database on my own computer and use Navicat to manage the database
-# Tableau can fetch data from databse as well
+# Tableau can fetch data from databse , just simply setup server:   Port:    Database:    Username:    password as well
 # If always getting error messages such like *****pageckage missing, go to "file=>Settings=>Python Interpreter   Click + to install the missing lib"
 import pymysql
 import pandas as pd
