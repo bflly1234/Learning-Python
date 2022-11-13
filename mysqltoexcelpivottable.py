@@ -1,3 +1,4 @@
+#Running Mysql data on my own computer and use Navicat to manage the database
 # If always getting error messages such like *****pageckage missing, go to "file=>Settings=>Python Interpreter   Click + to install the missing lib"
 import pymysql
 import pandas as pd
