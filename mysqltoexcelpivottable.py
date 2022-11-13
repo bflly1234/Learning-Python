@@ -26,6 +26,7 @@ print(df)
 pt = df.pivot_table(index=[0, 1], columns='Year', values=3, aggfunc=np.sum, margins=True, margins_name='SubTotal')
 pt.to_excel('E:\sales.xlsx',index=[0, 1], index_label=["Prov", "Channel"])
 print(pt)
-print('Done!')#read excel files
+print('Done!')
+# read excel files
 df2 = pd.read_excel('E:\sales.xlsx')
 print(df2)
