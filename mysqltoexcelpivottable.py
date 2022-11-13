@@ -22,7 +22,7 @@ df[3] = df[3].astype('float')
 df['Year'] = pd.DatetimeIndex(df[2]).year
 print(df)
 
-# generate a pivot table of sales data row = prov and channel, columns = year ,  values = buy_amount
+# generate a pivot table of sales data row = prov and channel, columns = year ,  values = buy_amount, margin shows the subtotal of both col and row
 pt = df.pivot_table(index=[0, 1], columns='Year', values=3, aggfunc=np.sum, margins=True, margins_name='SubTotal')
 pt.to_excel('E:\sales.xlsx',index=[0, 1], index_label=["Prov", "Channel"])
 print(pt)
