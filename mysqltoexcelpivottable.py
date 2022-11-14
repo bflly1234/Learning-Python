@@ -16,7 +16,8 @@ cursor = db.cursor()
 cursor.execute("select prov, channel, buy_date, buy_amount from sales")
 salesData = cursor.fetchall()
 db.close()
-
+# Check all data types
+print(salesDF.dtypes)
 # Right click > Go to > Implementation of a method to know more options
 df = pd.DataFrame(salesData)
 # Transfer dataset character from object to float or errors
