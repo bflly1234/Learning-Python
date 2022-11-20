@@ -47,6 +47,12 @@ for _ in range(3000):
     diffs.append(diff)
     diffs = np.array(diffs)
 
+normalize_list = np.random.normal(0, diffs.std(), size)
+# plt.hist(normalize_list)
+# plt.axvline(x=diff_ctr, color="red")
+# plt.show()
 
-plt.hist(diffs)
-plt.show()
+# p值<0.05
+p_value = (normalize_list > diff_ctr).mean()
+print("p-value：", p_value)
+print("p是否<0.05:", p_value < 0.05)
