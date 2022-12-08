@@ -41,7 +41,7 @@ for _ in range(3000):
     treatment_group = sample.query('group=="treatment"')
     treatment_view = treatment_group.query('action==0')['user_id'].nunique()
     treatment_click = treatment_group.query('action==1')['user_id'].nunique()
-    treatment_ctr = treatment_click / control_view
+    treatment_ctr = treatment_click / treatment_view
 
     diff = treatment_ctr - control_ctr
     diffs.append(diff)
