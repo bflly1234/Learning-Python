@@ -1,4 +1,3 @@
-# Missing the final part of getting p-value
 # ctrl+/ multiple annotation!
 # Demo project based on mock data to see if new webdesign has better performance then old one
 # Fetch data, csv file as example.
